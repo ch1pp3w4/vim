@@ -37,6 +37,18 @@ set encoding=utf-8
 set hlsearch
 nmap ,q :nohlsearch
 set wrap
+set ruler
+"sinctastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+
 
 "Save time
 nmap <space> :
@@ -46,8 +58,6 @@ nmap ,nt :NERDTreeToggle
 "#exuberant-ctags
 "#libparse-exuberantctags-perl
 nmap ,tl :TlistToggle
-
-set ruler
 
 filetype on
 filetype plugin indent on
