@@ -5,7 +5,7 @@ execute pathogen#infect('~/.vim/bundle/{}')
 set t_Co=256
 
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 let g:solarized_termcolors=256
 
 syntax on
